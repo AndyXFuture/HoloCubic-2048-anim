@@ -6,15 +6,15 @@
 * 返回刷新的位置
 */
 int GAME2048::addRandom() {
-    int random;
+    int rand;
     while (1) {
-        random = rand() % 16;
-        if (this->board[random / 4][random % 4] == 0) {
-            this->board[random / 4][random % 4] = 2;
+        rand = random(3200) % 16;
+        if (this->board[rand / 4][rand % 4] == 0) {
+            this->board[rand / 4][rand % 4] = 2;
             break;
         }
     }
-    return random;
+    return rand;
 }
 /*
 *   记录移动原来的位置，有数字则按方向填入ABCD

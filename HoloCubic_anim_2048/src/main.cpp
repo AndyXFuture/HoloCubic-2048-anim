@@ -45,6 +45,7 @@ void taskTwo(void * parameter){
 void setup()
 {
 	Serial.begin(115200);
+	randomSeed(analogRead(25));
 
 	/*** Init screen ***/
 	screen.init();

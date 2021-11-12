@@ -87,7 +87,7 @@ void showBoard(int* map) {
 	//显示游戏进度
 	int i = 0;
 
-	cout << "用WASD来操控,当有一个数字等于64时，游戏成功" << endl;
+	cout << "用上下左右来操控,当有一个数字等于"<< WIN_SCORE <<"时，游戏成功" << endl;
 	cout << "------------------------------" << endl;
 	cout << "丨     丨     丨     丨     丨" << endl;
 	printf("丨%3d  丨%3d  丨%3d  丨%3d  丨\n", map[0], map[1], map[2], map[3]);
