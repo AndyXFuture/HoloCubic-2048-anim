@@ -1,6 +1,6 @@
 # HoloCubic-2048-anim
 
-![](/img/img_1.jpg)
+![](/3.Img/Img_1.jpg)
 
 B站演示视频：https://www.bilibili.com/video/BV15T4y197Ly/
 
@@ -12,11 +12,15 @@ B站演示视频：https://www.bilibili.com/video/BV15T4y197Ly/
 
 **目录结构**
 
-`2048_MoveRecord`这个文件夹中是动画轨迹的计算，直接运行在VS2019
-
-`HoloCubic_anim_2048`是HoloCubic的固件代码，lvgl的部分写在了`lv_cubic_gui.c`里
+`Firmware`是HoloCubic的固件代码分为PlatformIO和Arduino环境，lvgl的部分都写在了`lv_cubic_gui.c`里
 
 MPU的判断是给**Metal Version**外壳写的，所以前后的判断做了偏移
+
+
+
+`Software`中有可以直接运行在VS2019的动画轨迹计算的测试程序
+
+
 
 
 
@@ -51,6 +55,8 @@ MPU的判断是给**Metal Version**外壳写的，所以前后的判断做了偏
 
 
 
+---
+
 ## LVGL动画实现思路
 通过观察可以将2048的动画分为三种，方块出生动画，移动动画，合并动画
 
@@ -58,7 +64,7 @@ MPU的判断是给**Metal Version**外壳写的，所以前后的判断做了偏
 
 然后根据动画轨迹获取到的int数组在`showAnim`函数做的调用。
 
-
+---
 
 ## 存在的问题
 * MPU有时会出现数据不稳乱抖的情况，暂时不影响正常游戏
@@ -67,7 +73,7 @@ MPU的判断是给**Metal Version**外壳写的，所以前后的判断做了偏
 
 
 
-
+---
 
 
 
